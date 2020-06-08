@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Permanent+Marker&display=swap');
 *,
 *::before,
 *::after {
@@ -10,10 +11,11 @@ html,
 body,
 .wrapper {
   height: 100%;
+  
 }
 
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Architects Daughter', cursive;
 }
 
 nav {
@@ -437,6 +439,13 @@ form > button {
 }
 /**/
 .bcimg {
+  background-image: url('https://wallpaperplay.com/walls/full/2/5/4/102451.jpg');
+
+  background-repeat: no-repeat;
+  background-size: 112% 112%;
+}
+
+.navimg {
   background-image: url('https://wallpaperplay.com/walls/full/2/5/4/102451.jpg');
   width: 100%;
 }
