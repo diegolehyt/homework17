@@ -16,7 +16,7 @@ app.use(express.json());
 app.use(express.static("public"));
 
 // mongoose connection 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://user1:password1@ds119489.mlab.com:19489/heroku_cq6llj7m", { useNewUrlParser: true });
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", { useNewUrlParser: true });
 
 // Import models (workout)
 const db = require("./models");
@@ -29,3 +29,4 @@ require("./routes/htmlRoutes")(app);
 app.listen(PORT, () => {
   console.log(`App running on port ${PORT}!`);
 });
+
