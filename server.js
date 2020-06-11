@@ -22,8 +22,8 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://user1:password1@ds119489.
 const db = require("./models");
 
 // Import Routes 
-require("./routes/apiRoutes")(app);
-require("./routes/htmlRoutes")(app);
+require("./routes/apiRoutes.js")(app);
+require("./routes/htmlRoutes.js")(app);
 
 // app Listener
 app.listen(PORT, () => {
