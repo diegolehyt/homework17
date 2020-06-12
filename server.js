@@ -28,8 +28,8 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/workout', {
 const db = require("./models");
 
 // Import Routes 
-require("./routes/apiRoutes.js")(app);
-require("./routes/htmlRoutes.js")(app);
+require('./routes/apiRoutes')(app);
+require('./routes/htmlRoutes')(app);
 
 // app Listener
 app.listen(PORT, () => {
