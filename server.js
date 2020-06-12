@@ -16,11 +16,11 @@ app.use(express.json());
 app.use(express.static("public"));
 
 // mongoose connection 
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/workout', {
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://diego:password1@ds119489.mlab.com:19489/heroku_cq6llj7m', {
   useNewUrlParser: true,
-  useUnifiedTopology: true,
-  useFindAndModify: false,
-  useCreateIndex: true
+  useUnifiedTopology: true
+  // useFindAndModify: false,
+  // useCreateIndex: true
 })
 // mongoose.connect(process.env.MONGODB_URI || 'mongodb://user1:password1@ds119489.mlab.com:19489/heroku_cq6llj7m', { useNewUrlParser: true });
 
@@ -37,4 +37,5 @@ app.listen(PORT, () => {
 });
 
 // mongodb://user1:password1@ds119489.mlab.com:19489/heroku_cq6llj7m
+// mongodb://diego:password1@ds119489.mlab.com:19489/heroku_cq6llj7m
 // mongodb://localhost/workout
